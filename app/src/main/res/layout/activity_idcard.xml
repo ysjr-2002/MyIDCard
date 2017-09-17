@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.myidcard.IDCardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/idbg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/idlabel"
+                        android:layout_height="match_parent"
+                        android:text="姓名:" />
+
+                    <TextView
+                        android:id="@+id/editText_name"
+                        style="@style/idtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|left"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_height="match_parent"
+                        style="@style/idlabel"
+                        android:text="性别:" />
+
+                    <TextView
+                        android:id="@+id/editText_sex"
+                        style="@style/idtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|left"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_height="match_parent"
+                        style="@style/idlabel"
+                        android:text="民族:" />
+
+                    <TextView
+                        android:id="@+id/editText_nation"
+                        style="@style/idtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|left"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_height="match_parent"
+                        style="@style/idlabel"
+                        android:text="出生年月:" />
+
+                    <TextView
+                        android:id="@+id/editText_year"
+                        style="@style/idtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|left"
+                        android:text="" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/photo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="match_parent"
+                style="@style/idlabel"
+                android:text="证件号码:" />
+
+            <TextView
+                android:id="@+id/editText_id"
+                style="@style/idtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/idlabel"
+                android:text="有效期:"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/editText_validate"
+                style="@style/idtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="match_parent"
+                style="@style/idlabel"
+                android:text="地址:" />
+
+            <TextView
+                android:id="@+id/editText_address"
+                style="@style/idtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_open"
+            style="@style/mybtutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="打开" />
+
+        <Button
+            android:id="@+id/button_close"
+            style="@style/mybtutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="关闭" />
+
+
+        <Button
+            android:id="@+id/button_clear"
+            style="@style/mybtutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="清空" />
+
+        <Button
+            android:id="@+id/button_finish"
+            style="@style/mybtutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="退出" />
+    </LinearLayout>
+
+
+</android.widget.LinearLayout>
